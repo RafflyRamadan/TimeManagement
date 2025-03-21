@@ -1,15 +1,14 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Time Management by KAI</title>
-    <!-- CSS Eksternal -->
+    <!-- Library CSS yang digunakan -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/index.css">
 </head>
@@ -18,13 +17,16 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
+            <!-- Logo dan Nama Website -->
             <a class="navbar-brand" href="#hero">
                 <i class="fas fa-train-subway"></i> TIG<span style="color: yellow;">KAI</span>
             </a>
+            <!-- Tombol hamburger untuk tampilan mobile -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+            <!-- Menu Navbar -->
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
@@ -50,13 +52,14 @@
     <!-- Features Section -->
     <section id="features">
         <div class="container">
+            <!-- Judul -->
             <div class="section-header" data-aos="fade-up" data-aos-duration="800">
                 <h2>Fitur Kami</h2>
                 <p>Solusi manajemen waktu yang terintegrasi untuk meningkatkan kinerja.</p>
             </div>
             <div class="row">
-                <!-- Fitur 1 -->
-                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100" data-aos-duration="800">
+                <!-- Fitur 1: Lihat Progress -->
+                <div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="100" data-aos-duration="800">
                     <div class="feature-card">
                         <div class="feature-icon">
                             <i class="fas fa-tasks"></i>
@@ -67,8 +70,8 @@
                     </div>
                 </div>
 
-                <!-- Fitur 2 -->
-                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">
+                <!-- Fitur 2: Cetak Laporan -->
+                <div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">
                     <div class="feature-card">
                         <div class="feature-icon">
                             <i class="fas fa-file-pdf"></i>
@@ -79,8 +82,8 @@
                     </div>
                 </div>
 
-                <!-- Fitur 3 -->
-                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300" data-aos-duration="800">
+                <!-- Fitur 3: Notifikasi -->
+                <div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="300" data-aos-duration="800">
                     <div class="feature-card">
                         <div class="feature-icon">
                             <i class="fas fa-bell"></i>
@@ -99,8 +102,8 @@
         <div class="container">
             <h2 class="text-center mb-5" data-aos="fade-up" data-aos-duration="800">Struktur Organisasi</h2>
             <div class="row">
-                <!-- Struktur 1 -->
-                <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="800">
+                <!-- Struktur 1: Manajemen -->
+                <div class="col-md-4 col-sm-6" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="800">
                     <div class="organization-card">
                         <div class="org-icon">
                             <i class="fas fa-sitemap"></i>
@@ -111,8 +114,8 @@
                     </div>
                 </div>
 
-                <!-- Struktur 2 -->
-                <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="800">
+                <!-- Struktur 2: Operasional -->
+                <div class="col-md-4 col-sm-6" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="800">
                     <div class="organization-card">
                         <div class="org-icon">
                             <i class="fas fa-cogs"></i>
@@ -123,8 +126,8 @@
                     </div>
                 </div>
 
-                <!-- Struktur 3 -->
-                <div class="col-md-4" data-aos="zoom-in" data-aos-delay="300" data-aos-duration="800">
+                <!-- Struktur 3: IT & Teknologi -->
+                <div class="col-md-4 col-sm-6" data-aos="zoom-in" data-aos-delay="300" data-aos-duration="800">
                     <div class="organization-card">
                         <div class="org-icon">
                             <i class="fas fa-laptop-code"></i>
@@ -143,7 +146,7 @@
         <div class="container">
             <div class="row">
                 <!-- Informasi Website -->
-                <div class="col-md-6" data-aos="fade-right" data-aos-duration="800">
+                <div class="col-lg-6 col-md-12 mb-4" data-aos="fade-right" data-aos-duration="800">
                     <h4>Time Go KAI (TigKAI)</h4>
                     <hr>
                     <p>TigKAI adalah website manajemen waktu yang dirancang untuk membantu mengelola tugas sehari-hari
@@ -153,13 +156,13 @@
                 </div>
 
                 <!-- Kontak -->
-                <div class="col-md-6" data-aos="fade-left" data-aos-duration="800">
+                <div class="col-lg-6 col-md-12" data-aos="fade-left" data-aos-duration="800">
                     <h4>Kontak Kami</h4>
                     <hr>
-                    <p><i class="fas fa-map-marker-alt"></i> Jl. Ir. H. Juanda, Sekeloa, Kecamatan Coblong, <br>Kota
+                    <p><i class="fas fa-map-marker-alt me-2"></i> Jl. Ir. H. Juanda, Sekeloa, Kecamatan Coblong, <br>Kota
                         Bandung, Jawa Barat 40134</p>
-                    <p><i class="fas fa-phone-alt"></i> +62 812-2365-2494</p>
-                    <p><i class="fas fa-envelope"></i> rafflyputrar@gmail.com</p>
+                    <p><i class="fas fa-phone-alt me-2"></i> +62 812-2365-2494</p>
+                    <p><i class="fas fa-envelope me-2"></i> rafflyputrar@gmail.com</p>
                 </div>
             </div>
 
@@ -170,33 +173,36 @@
         </div>
     </footer>
 
-    <!-- JavaScript -->
+    <!-- JavaScript Library -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 
     <!-- Custom JavaScript -->
     <script>
-    // Inisialisasi Animate On Scroll
+    // Inisialisasi Animate On Scroll (AOS)
+    // Library untuk membuat animasi saat scrolling
     AOS.init({
-        once: false, // Animasi hanya terjadi sekali saat scroll ke bawah
-        mirror: false // Elemen tidak beranimasi saat scroll melewatinya
+        once: false, // Animasi berjalan setiap kali elemen terlihat saat scroll
+        mirror: false // Elemen tidak beranimasi saat scroll ke atas melewatinya
     });
 
-    // Menu mobile otomatis tertutup saat diklik
+    // Fungsi untuk menutup menu mobile saat item menu diklik
     const navLinks = document.querySelectorAll('.nav-link');
     const navbarCollapse = document.querySelector('.navbar-collapse');
     const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
-        toggle: false
+        toggle: false // Tidak memunculkan/menyembunyikan menu saat inisialisasi
     });
 
+    // Menambahkan event listener untuk setiap item menu
     navLinks.forEach(function(navLink) {
         navLink.addEventListener('click', function() {
-            // Hanya tutup pada tampilan mobile (lebar < 992px)
+            // Hanya tutup menu pada tampilan mobile (lebar < 992px)
             if (window.innerWidth < 992) {
                 bsCollapse.hide();
             }
         });
     });
+
     </script>
 </body>
 
