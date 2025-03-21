@@ -9,15 +9,15 @@ body {
     background-color: whitesmoke;
 }
 
-/* === NAVIGASI === */
+/* Navbar */
 .navbar {
     background-color: navy;
     padding: 15px;
-    position: fixed;
+    position: fixed; /* Menu tetap di atas saat scroll */
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1000;
+    z-index: 1000; /* Memastikan menu tetap di atas semua elemen */
 }
 
 .navbar-brand {
@@ -41,11 +41,11 @@ body {
     color: skyblue !important;
 }
 
-/* === HERO SECTION === */
+/* Hero Section */
 .hero-section {
-    background-image: url("../img/background_kai2.jpg");
+    background: url("../img/background_kai2.jpg") center bottom;
     background-size: cover;
-    background-position: center bottom;
+    background-repeat: no-repeat;
     position: relative;
     color: white;
     text-align: center;
@@ -53,10 +53,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 0;
 }
 
-/* Lapisan gelap di atas gambar background */
+/* Overlay gelap untuk meningkatkan keterbacaan teks */
 .hero-section::before {
     content: '';
     position: absolute;
@@ -70,7 +69,7 @@ body {
 
 .hero-section .container {
     position: relative;
-    z-index: 2;
+    z-index: 2; /* Memastikan teks berada di atas overlay */
     padding-top: 60px;
 }
 
@@ -86,7 +85,7 @@ body {
     margin: 0 auto 30px;
 }
 
-/* Tombol Aksi */
+/* CTA Button */
 .cta-btn {
     background: white;
     color: blue;
@@ -114,7 +113,7 @@ body {
     background: rgba(255, 255, 255, 0.1);
 }
 
-/* === JUDUL SECTION === */
+/* Judul Section */
 .section-header {
     text-align: center;
     margin-bottom: 40px;
@@ -127,7 +126,7 @@ body {
     margin-bottom: 15px;
 }
 
-/* === SECTION FITUR === */
+/* Section Fitur */
 #features {
     padding: 80px 0;
     background-color: whitesmoke;
@@ -161,12 +160,12 @@ body {
     font-size: 1.8rem;
 }
 
-/* === SECTION ORGANISASI === */
+/* Section Organisasi */
 .organization-section {
     background-color: navy;
     color: white;
     padding: 150px 0;
-    min-height: 100vh;
+    min-height: 100vh; /* Minimal tinggi 100% dari viewport */
 }
 
 .organization-card {
@@ -189,7 +188,7 @@ body {
     color: skyblue;
 }
 
-/* === FOOTER === */
+/* Footer */
 footer {
     background: navy;
     color: white;
@@ -203,7 +202,7 @@ footer {
     margin-top: 30px;
 }
 
-/* === RESPONSIVE === */
+/* Responsivitas */
 @media (max-width: 768px) {
     .navbar-collapse {
         background-color: navy;
@@ -227,5 +226,27 @@ footer {
 
     .section-header h2 {
         font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-section {
+        height: auto;
+        min-height: 100vh;
+        padding: 100px 0 50px;
+    }
+
+    .hero-section h1 {
+        font-size: 1.8rem;
+    }
+
+    .cta-btn {
+        display: block;
+        width: 80%;
+        margin: 10px auto;
+    }
+
+    .organization-section {
+        padding: 80px 0;
     }
 }
